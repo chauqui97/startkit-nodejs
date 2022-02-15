@@ -1,0 +1,24 @@
+{
+  "name": "startkit-nodejs",
+  "version": "1.0.0",
+  "description": "This is startkit nodejs",
+  "main": " .js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "startkit",
+    "node"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "moment": "^2.22.2",
+    "npm": "^6.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "author": "mer25",
+  "license": "ISC"
+}
