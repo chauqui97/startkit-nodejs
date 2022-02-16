@@ -1,0 +1,18 @@
+module.exports = {
+  host: process.env.REDIS_HOST || "10.56.239.139",
+  port: process.env.REDIS_PORT || "30079",
+  password: process.env.REDIS_PASSWORD | "admin",
+  maxRetriesPerRequest: process.env.REDIS_MAX_RETRY | 2,
+  expireTime: process.env.REDIS_EXPIRE_TIME | 60000,
+  transAmtExpireTime: process.env.TRANS_AMT_EXPIRE_TIME || 172800,
+  acctInfoExpireTime: process.env.ACCT_INFO_EXPIRE_TIME || 300,
+  acctByPersExpireTime: process.env.ACCT_BY_PERS_EXPIRE_TIME | 300,
+  acctByOrgExpireTime: process.env.ACCT_BY_ORG_EXPIRE_TIME | 300,
+  persInfoExpireTime: process.env.PERS_INFO_EXPIRE_TIME || 300,
+  orgInfoExpireTime: process.env.ORG_INFO_EXPIRE_TIME | 300,
+  redisSeperateKey: process.env.REDIS_SEPERATE_KEY | ":",
+  redisPrefixkey: process.env.REDIS_PREFIX_KEY | "AAG",
+  getBeneficiaries: process.env.REDIS_GET_BENEFICIARIES_EXPIRETIME | 60,
+  transactionStatements: process.env.TRANSACTION_STATEMENTS_EXPIRETIME | 60,
+  enableRetryLockAcctYN: process.env.ENABLE_RETRY_LOCK_ACCT_LIMIT_YN | "N",
+};
